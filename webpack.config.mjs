@@ -53,6 +53,7 @@ export default {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      favicon: "./src/assets/images/favicon-32x32.png",
     }),
     new MiniCssExtractPlugin(),
   ],
