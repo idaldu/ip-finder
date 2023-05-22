@@ -1,0 +1,151 @@
+@import url("./_normalize.css");
+@import url("./_global.css");
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 20px;
+}
+
+.finder {
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  max-height: 280px;
+}
+
+.finder__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finder__title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.finder__text-field {
+  position: relative;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+  .finder__text-field {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .finder__text-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.finder__input {
+  width: 100%;
+  padding: 18px 60px 18px 10px;
+  text-overflow: ellipsis;
+  height: 55px;
+  border: none;
+  border-radius: 15px;
+}
+
+.finder__btn {
+  position: absolute;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: black;
+  background-image: url("../images/icon-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 55px;
+  width: 50px;
+  right: 0;
+}
+
+.info {
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px 35px;
+  border-radius: 20px;
+}
+
+.info__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .info__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .info__list {
+    gap: 20px;
+  }
+}
+
+.info__list-item {
+  position: relative;
+  padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .info__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .info__list-item {
+    padding-right: 20px;
+  }
+}
+
+.info__list-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: rgba(116, 101, 101, 0.402);
+  width: 1px;
+  height: 80px;
+}
+
+@media (max-width: 767px) {
+  .info__list-item:not(:last-child):after {
+    display: none;
+  }
+}
+
+.info__title {
+  font-size: 12px;
+  color: rgba(65, 65, 65, 0.675);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.info__descr {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.map {
+  height: 800px;
+  width: 100%;
+}

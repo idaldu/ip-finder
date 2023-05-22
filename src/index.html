@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="finder">
+      <div class="container finder__container">
+        <h1 class="finder__title">IP Address Tracker</h1>
+        <div class="finder__text-field">
+          <input
+            class="finder__input"
+            type="text"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="finder__btn"></button>
+        </div>
+        <div class="info">
+          <ul class="info__list">
+            <li class="info__list-item">
+              <h2 class="info__title">Ip address</h2>
+              <div id="address" class="info__descr"></div>
+            </li>
+            <li class="info__list-item">
+              <h2 class="info__title">Location</h2>
+              <div id="location" class="info__descr"></div>
+            </li>
+            <li class="info__list-item">
+              <h2 class="info__title">Timezone</h2>
+              <div class="info__descr">UTC <span id="time"></span></div>
+            </li>
+            <li class="info__list-item">
+              <h2 class="info__title">Isp</h2>
+              <div id="isp" class="info__descr"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="map"></div>
+  </body>
+</html>
